@@ -18,4 +18,3 @@ var app = new Vue ({
         }
     }
 });
-
