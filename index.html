@@ -15,20 +15,15 @@
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" v-model="nombre" class="form-control">
 
-
                     <label for="promedio">Promedio:</label>
-                    <input type="number"  id="promedio" min="0" max="10" v-model="promedio" class="form-control">
+                    <input type="number" id="promedio" min="0" max="10" v-model="promedio" class="form-control">
 
-                    
-
-                    <input type="button" value="Guardar" class="btn btn-success"
-                    v-on:click="agregarnota">
-
+                    <input type="button" value="Guardar" class="btn btn-success" v-on:click="agregarnota">
                 </div>
 
                 <div class="col-md-6 col-xs-12">
                     <h1 v-if="lista.length > 0">Lista de notas</h1>
-                    <h1 v-else="">No hay notas</h1>
+                    <h1 v-else>No hay notas</h1>
                     <label for="nombre">Nombre:</label>
                     <table class="table table-striped">
                         <thead>
@@ -53,14 +48,13 @@
                             </tr>
                         </tfoot>
                     </table>
-
                 </div>
             </div>
         </div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="js/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
     <script src="js/principal.js"></script>
 </body>
 </html>
