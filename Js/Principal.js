@@ -1,4 +1,4 @@
-var app = new Vue ({
+var app = new Vue({
     el: '#App',
     data: {
         nombre: '',
@@ -6,10 +6,10 @@ var app = new Vue ({
         lista: []
     },
     methods: {
-        agregarnota: function(){
+        agregarnota: function() {
             if (this.nombre !== "" && this.promedio !== "") {
-                let estado = this.promedio >= 7 ? " Aprobado" : "Reprobado"; 
-                this.lista.push({nombre: this.nombre, promedio: this.promedio, estado: estado});
+                let estado = this.promedio >= 7 ? "Aprobado" : "Reprobado"; 
+                this.lista.push({ nombre: this.nombre, promedio: this.promedio, estado: estado });
                 this.nombre = '';
                 this.promedio = '';
             } else {
